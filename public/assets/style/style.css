@@ -129,6 +129,25 @@ margin-top: 110px;
   border: none;
 }
 
+
+.button{
+  height: 50px;
+  background-color: hsl(0, 54%, 25%);; 
+  color: white; 
+  font-family: bold;
+  width: 300%;
+  margin: auto;
+  border: none;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+
 #body-header2{
   margin-top: 100px;
   height: 600px;
