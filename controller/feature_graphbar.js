@@ -48,12 +48,4 @@ router.post('/cariGraphBar1',express.urlencoded(),async(req,res)=>{
 
 });
 
-
-import { countCharacter } from "../query/graphbarQuery.js";
-const router = express.Router();
-
-router.get('/',(req,res)=>{
-    res.render('feature_graphbar');
-});
-
 export {router as graphbar};
