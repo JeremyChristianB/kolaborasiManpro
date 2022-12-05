@@ -129,6 +129,7 @@ margin-top: 110px;
   border: none;
 }
 
+
 .button{
   height: 50px;
   background-color: hsl(0, 54%, 25%);; 
@@ -144,6 +145,8 @@ margin-top: 110px;
   transform: scale(1.05);
   transition: 0.3s;
 }
+
+
 
 #body-header2{
   margin-top: 100px;
