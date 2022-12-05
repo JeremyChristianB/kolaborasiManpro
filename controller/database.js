@@ -1,10 +1,5 @@
-import express, { query } from 'express';
 import mysql from 'mysql';
-import ejs from 'ejs';
 
-var route = express.Router();
-
-//Buat Database Book Game Of Thrones
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
@@ -26,6 +21,4 @@ const dbConnect = () => {
     })
 }
 
-
-
-export {route};
+export{dbConnect as dbConnect}
