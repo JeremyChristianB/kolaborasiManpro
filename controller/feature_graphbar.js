@@ -8,7 +8,7 @@ const queryGraphBar1 = `SELECT Distinct Source,Count(Source) AS jumlahChar FROM 
 
 const getGraphBar1 = conn => {
     return new Promise((resolve,reject) => {
-        conn.query(`SELECT DISTINCT Source from book_gabungan WHERE book LIKE '1.' ORDER BY Count(Source) DESC LIMIT 5`,(err,result) => {
+        conn.query(`SELECT DISTINCT Source,Count(Source) as jumlahNama from book_gabungan WHERE book LIKE '1.' ORDER BY Count(Source) DESC LIMIT 5`,(err,result) => {
             if(err){
                 reject(err);
             }else{
