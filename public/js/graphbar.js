@@ -37,9 +37,24 @@ function showChart1(bookNumber){
             type: 'bar',
             data: {
                 labels: arrLabel,
+                borderColor : "#fffff",
                 datasets: [{
                     label: 'number of Interactions',
                     data: arrData,
+                    backgroundColor: [
+                        "#f38b4a",
+                        "#56d798",
+                        "#ff8397",
+                        "#6970d5",
+                        "#f38b4a",
+                        "#56d798",
+                        "#ff8397",
+                        "#6970d5",
+                        "#f38b4a",
+                        "#56d798",
+                        "#ff8397",
+                        "#6970d5"
+                      ],
                     borderWidth: 1
                 }]
             },
@@ -48,7 +63,7 @@ function showChart1(bookNumber){
                 scales: {
                     x: {
                         beginAtZero: true
-                    }
+                    },
                 }
             }
         });
@@ -80,6 +95,20 @@ function showChart1(bookNumber){
                     labels: arrLabel,
                     datasets: [{
                         label: 'number of Interactions',
+                        backgroundColor: [
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5",
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5",
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5"
+                          ],
                         data: arrData,
                         borderWidth: 1
                     }]
@@ -122,6 +151,20 @@ function showChart1(bookNumber){
                     labels: arrLabel,
                     datasets: [{
                         label: 'number of Interactions',
+                        backgroundColor: [
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5",
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5",
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5"
+                          ],
                         data: arrData,
                         borderWidth: 1
                     }]
@@ -163,6 +206,20 @@ function showChart1(bookNumber){
                     labels: arrLabel,
                     datasets: [{
                         label: 'number of Interactions',
+                        backgroundColor: [
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5",
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5",
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5"
+                          ],
                         data: arrData,
                         borderWidth: 1
                     }]
@@ -204,6 +261,20 @@ function showChart1(bookNumber){
                     labels: arrLabel,
                     datasets: [{
                         label: 'number of Interactions',
+                        backgroundColor: [
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5",
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5",
+                            "#f38b4a",
+                            "#56d798",
+                            "#ff8397",
+                            "#6970d5"
+                          ],
                         data: arrData,
                         borderWidth: 1
                     }]
