@@ -12,6 +12,11 @@
     background-color: whitesmoke;
   }
 
+  .form1{
+    margin: 10% 0 0 55%;
+    width: 100%;
+  }
+
 
 html{
 scroll-behavior: smooth;
@@ -119,6 +124,36 @@ margin-top: 110px;
  float: left;
 }
 
+#body-header2{
+  margin-top: 100px;
+  height: 600px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#body-header2 a{
+  margin-left: 100px;
+  color: hsl(0, 54%, 25%);
+  float: left;
+  font-size: 20px;
+ }
+
+ #body-header3{
+  margin-top: 165px;
+  height: 120%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+#body-header3 a{
+  margin-left: 200px;
+ color: hsl(0, 54%, 25%);
+ float: left;;
+ }
+
 #btn_startshop{
   height: 50px;
   background-color: hsl(0, 54%, 25%);; 
@@ -129,6 +164,26 @@ margin-top: 110px;
   border: none;
 }
 
+#dropdownMenuButton{
+  margin-left: 10%;
+  background-color: hsl(0, 54%, 25%);
+  height: 10%;
+  width: 20%;
+  position: static;
+}
+
+li{
+  margin-top: 10px;
+  width: 300px;
+}
+
+#chartstyle{
+  margin: 5% 0 0 5%;
+}
+
+#mychart{
+  background-color: #173695;
+}
 
 .button{
   height: 50px;
@@ -146,23 +201,6 @@ margin-top: 110px;
   transition: 0.3s;
 }
 
-
-
-#body-header2{
-  margin-top: 100px;
-  height: 600px;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#body-header2 a{
-  margin-left: 100px;
-  color: hsl(0, 54%, 25%);
-  float: left;
-  font-size: 20px;
- }
- 
  #hover:hover{
   cursor: pointer;
   color: burlywood;;
