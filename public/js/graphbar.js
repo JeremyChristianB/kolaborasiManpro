@@ -1,4 +1,3 @@
-
 const chart = document.querySelector('#myChart');
 const dropdownContainer = document.querySelector("#dropdownMenuButton");
 const btnBook1 = document.querySelector("#book1");
