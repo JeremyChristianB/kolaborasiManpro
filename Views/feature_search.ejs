@@ -4,9 +4,23 @@
 		<link rel="shortcut icon" href="img/icon.png"/>
 		<title>GoT - GraphBar</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script
+ 		type="text/javascript"
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+		></script>
+		<link
+  		href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+  		rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="../assets/style/style.css">
+		<link rel="stylesheet" href="../public/assets/lib/font-awesome.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<script src="/js/search.js" defer></script>
 	</head>
 	<body>
         <a id="home">.</a>
@@ -26,30 +40,51 @@
 			<div style="float: left;">
 				<br><br><br>
 			<a id="hover" style="font-weight: 1000; font-size: 40px; font-family: bold; text-decoration: none; cursor: pointer;">
-				Graf
+				Search
 			</a>
-			<br><br><br>
-			<a style=" float: left;">
-				Bagian Proyek Untuk Menampilkan Graf Yang telah Dirancang
-			</a>
-			<br>
-			<a style="float: left;">
-				Berdasarkan Buku Game Of Thrones Yang Ada
-			</a>
-			<br><br><br>
+			<br><br>
+			<form class="form1" method="post" action="/feature_search">
 
-			<a id="hover" style="font-weight: 1000; font-size: 40px; font-family: bold; text-decoration: none; cursor: pointer;">
-				GraphBar
-			</a>
-			<br><br><br>
-			<a style=" float: left;">
-				Bagian Proyek Untuk Menampilkan GraphBar Yang telah Dirancang
-			</a>
-			<br>
-			<a style="float: left;">
-				Berdasarkan Buku Game Of Thrones Yang Ada
-			</a>
-			<br><br><br>
+				<div class="form-group">
+					<select class="form-select" name="book" id="" aria-label="Default select example">
+						<option selected>Choose a Book</option>
+						<option value="book1">Book1</option>
+						<option value="book2">Book2</option>
+						<option value="book3">Book3</option>
+						<option value="book4">Book4</option>
+						<option value="book5">Book5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+
+					<div class="input-group rounded">
+						<input type="search" id="autocomplete_search" name="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+						<span id="search_result"></span>
+					</div>
+					<br>
+					<p>
+						<button type="submit" class="btn btn-primary" id="btn_startshop">Search</button>
+					</p>
+				</div>
+
+				<table>
+					<tr>
+						<th>Target</th>
+						<th>weight</th>
+						<th>Source</th>
+					</tr>
+					<% for(const row of result) { %>
+						<tr>
+							<td><%= row.Target %></td>
+							<td><%= row.weight %></td>
+							<td><%= row.Source %></td>
+						</tr>
+					<% } %>
+					<table>
+	
+			  </form>
+
 
 			<a id="hover" style="font-weight: 1000; font-size: 40px; font-family: bold; text-decoration: none; cursor: pointer;">
 				Search
@@ -104,9 +139,7 @@
 						</tr>
 					<% } %>
 					<table>
-	
 			  </form>
-
 		</div>
 		<a id="help"></a>
 	</body>

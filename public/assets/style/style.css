@@ -154,6 +154,7 @@ margin-top: 110px;
  float: left;;
  }
 
+
  #body-header4{
   margin-top: 165px;
   height: 1300px;
@@ -174,6 +175,8 @@ margin-top: 110px;
   margin-right: auto;
   margin-top: 20%;
 }
+
+
 
 #btn_startshop{
   height: 50px;
@@ -263,6 +266,17 @@ div.scrollmenu {
   height: 450px;
   margin-left: auto; 
   margin-right: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
 }
 
 div.scrollmenu a {
