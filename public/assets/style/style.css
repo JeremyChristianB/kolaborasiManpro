@@ -138,7 +138,7 @@ margin-top: 110px;
 
 #body-header{
   margin-top: 165px;
-  height: 500px;
+  height: 600px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -180,9 +180,16 @@ margin-top: 110px;
  float: left;;
  }
 
+
  #body-header4{
   margin-top: 165px;
   height: 1500px;
+=======
+
+ #body-header4{
+  margin-top: 165px;
+  height: 1300px;
+
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -194,6 +201,15 @@ margin-top: 110px;
  color: hsl(0, 54%, 25%);
  float: left;
 }
+
+
+#table-search{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+
+
 
 #btn_startshop{
   height: 50px;

@@ -85,6 +85,61 @@
 	
 			  </form>
 
+
+			<a id="hover" style="font-weight: 1000; font-size: 40px; font-family: bold; text-decoration: none; cursor: pointer;">
+				Search
+			</a>
+			<br><br><br>
+			<a style=" float: left;">
+				Bagian Proyek Untuk Menampilkan Halaman Search, Untuk
+			</a>
+			<br>
+			<a style="float: left;">
+				Mencari Karakter 
+			</a>
+			<br>
+			</div>
+			<br><br>
+			<form class="form1" method="post" action="/feature_search">
+
+				<div class="form-group">
+					<select class="form-select" name="book" id="" aria-label="Default select example">
+						<option selected>Choose a Book</option>
+						<option value="book1">Book1</option>
+						<option value="book2">Book2</option>
+						<option value="book3">Book3</option>
+						<option value="book4">Book4</option>
+						<option value="book5">Book5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+
+					<div class="input-group rounded">
+						<input type="search" id="autocomplete_search" name="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+						<span id="search_result"></span>
+					</div>
+					<br>
+					<p>
+						<button type="submit" class="btn btn-primary" id="btn_startshop">Search</button>
+					</p>
+				</div>
+
+				<table id="table-search">
+					<tr>
+						<th>Target</th>
+						<th>weight</th>
+						<th>Source</th>
+					</tr>
+					<% for(const row of result) { %>
+						<tr>
+							<td><%= row.Target %></td>
+							<td><%= row.weight %></td>
+							<td><%= row.Source %></td>
+						</tr>
+					<% } %>
+					<table>
+			  </form>
 		</div>
 		<a id="help"></a>
 	</body>
