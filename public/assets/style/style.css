@@ -17,6 +17,18 @@
     width: 100%;
   }
 
+  .form2{
+    margin: 10px 0 0 15%;
+    width: 100%;
+  }
+
+  #form-select{
+    width: 18%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 3px;
+  }
+
 
 html{
 scroll-behavior: smooth;
@@ -106,6 +118,20 @@ transform: scale(0.95);
   display: inline;
 }
 
+#hover{
+  font-weight: 1000; 
+  font-size: 40px; 
+  font-family: bold; 
+  text-decoration: none; 
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#judul{
+  margin-left: 30%;
+  margin-bottom: 50px;
+}
+
 #bodytitle{
 margin-top: 110px;
 }
@@ -157,7 +183,13 @@ margin-top: 110px;
 
  #body-header4{
   margin-top: 165px;
+  height: 1500px;
+=======
+
+ #body-header4{
+  margin-top: 165px;
   height: 1300px;
+
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -169,6 +201,7 @@ margin-top: 110px;
  color: hsl(0, 54%, 25%);
  float: left;
 }
+
 
 #table-search{
   margin-left: auto;
@@ -337,4 +370,10 @@ margin-left: 190px;
 margin-right: 300px;
 width: 400px; 
 height: fit-content;
+}
+
+#mynetwork{
+  height: 60%;
+  background-color: rgba(126, 105, 105, 0.733);
+  margin: 5%;
 }
