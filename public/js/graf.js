@@ -3,14 +3,6 @@ if(formGraf != null){
   formGraf.addEventListener("submit", onSubmitGraf);
 }
 
-function encodeURL(data){
-    const ret = [];
-    for (let d in data){
-        ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
-    }
-    return ret.join('&');
-  }
-
 function onSubmitGraf(event){
   event.preventDefault();
   let formElements = event.currentTarget.elements;
@@ -35,8 +27,6 @@ function onSubmitGraf(event){
   .then(result => {
     let resultJSON = JSON.parse(result);
     if(resultJSON.status == 'success'){
-      console.log('sukses');
-      // console.log(resultJSON);
 
       let arr1PreNodes = [];
       let arr1Nodes = [];
@@ -60,24 +50,16 @@ function onSubmitGraf(event){
       for (let i = 0; i < arr1Nodes.length; i++) {
         arrNodes[i] = {id:arr1Nodes[i], label: arr1Nodes[i]};
       }
-
-      let arr1PreEdges = [];
-      let arr1Edges = [];
       let arrEdges = [];
 
       for (let i = 0; i < resultJSON.arrSource.length; i++) {
         arrEdges[i] = {from:resultJSON.arrSource[i], to:resultJSON.arrTarget[i]};
       }
 
-      console.log(arrNodes);
-      console.log(arrEdges);
-
       let nodes = new vis.DataSet(arrNodes);
-
       let edges = new vis.DataSet(arrEdges);
 
       let container = document.getElementById('mynetwork');
-
       let data = {
         nodes: nodes,
         edges: edges
@@ -88,4 +70,12 @@ function onSubmitGraf(event){
       let network = new vis.Network(container,data,options);
     }
   })
+}
+
+function encodeURL(data){
+  const ret = [];
+  for (let d in data){
+      ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));
+  }
+  return ret.join('&');
 }
