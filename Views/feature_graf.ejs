@@ -7,6 +7,9 @@
 		<link rel="stylesheet" href="../assets/style/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<script type="module" src="/js/graf.js" defer></script>
+		
+		<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 	</head>
 	<body>
         <a id="home">.</a>
@@ -23,47 +26,29 @@
 		</div>
 		<!-- BODY -->
 		<div class="card3" id="body-header">
-			<div style="float: left;">
-				<br><br><br>
-			<a id="hover" style="font-weight: 1000; font-size: 40px; font-family: bold; text-decoration: none; cursor: pointer;">
-				Graf
-			</a>
-			<br><br><br>
-			<a style=" float: left;">
-				Bagian Proyek Untuk Menampilkan Graf Yang telah Dirancang
-			</a>
-			<br>
-			<a style="float: left;">
-				Berdasarkan Buku Game Of Thrones Yang Ada
-			</a>
-			<br><br><br>
 
-			<a id="hover" style="font-weight: 1000; font-size: 40px; font-family: bold; text-decoration: none; cursor: pointer;">
-				GraphBar
-			</a>
-			<br><br><br>
-			<a style=" float: left;">
-				Bagian Proyek Untuk Menampilkan GraphBar Yang telah Dirancang
-			</a>
-			<br>
-			<a style="float: left;">
-				Berdasarkan Buku Game Of Thrones Yang Ada
-			</a>
-			<br><br><br>
+			<form class="form1" method="post" action="/graf" id="formGraf">
 
-			<a id="hover" style="font-weight: 1000; font-size: 40px; font-family: bold; text-decoration: none; cursor: pointer;">
-				Search
-			</a>
-			<br><br><br>
-			<a style=" float: left;">
-				Bagian Proyek Untuk Menampilkan Halaman Search, Untuk
-			</a>
-			<br>
-			<a style="float: left;">
-				Mencari Karakter 
-			</a>
-			<br>
-			</div>
+				<div class="form-group">
+					<select class="form-select" name="book" id="" aria-label="Default select example">
+						<option selected>Choose a Book</option>
+						<option value="book1">Book1</option>
+						<option value="book2">Book2</option>
+						<option value="book3">Book3</option>
+						<option value="book4">Book4</option>
+						<option value="book5">Book5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<p>
+						<button type="submit" class="btn btn-primary" id="btn_startshop">Search</button>
+					</p>
+				</div>
+			  </form>
+
+		</div>
+			<div id="mynetwork"></div>
 		</div>
 		<a id="help"></a>
 	</body>
