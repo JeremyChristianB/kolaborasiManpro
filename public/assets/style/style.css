@@ -360,4 +360,5 @@ height: fit-content;
   height: 60%;
   background-color: rgba(126, 105, 105, 0.733);
   margin: 5%;
+  position: relative;
 }
