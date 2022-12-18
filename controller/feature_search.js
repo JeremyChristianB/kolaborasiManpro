@@ -29,7 +29,7 @@ const getNama = (conn) => {
 
 const getAutoComplete1 = (conn,nama,search_query) => {
     return new Promise((resolve,reject) => {
-        conn.query(`SELECT Target,Source,weight FROM ${search_query} WHERE Source LIKE '%${nama}%' Order BY weight LIMIT 10 `,(err,result) => {
+        conn.query(`SELECT Target,Source,weight FROM ${search_query} WHERE Source LIKE '%${nama}%' Order BY weight DESC LIMIT 10 `,(err,result) => {
             if(err){
                 reject(err);
             }else{
