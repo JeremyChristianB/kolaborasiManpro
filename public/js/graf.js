@@ -82,7 +82,7 @@ function onSubmitGraf(event){
         nodes: nodes,
         edges: edges
       };
-      
+
       let options = {};
       
       let network = new vis.Network(container,data,options);
